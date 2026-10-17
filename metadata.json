@@ -1,0 +1,6 @@
+{
+  "name": "P-MARKET PH",
+  "description": "Multi-vendor Philippine ecommerce marketplace featuring direct platform retail, independent verified sellers, agent referral commissions, GCash and Maya payment integrations, and automated commission ledgers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

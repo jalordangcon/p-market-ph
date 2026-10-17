@@ -1,0 +1,551 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_001",
+      "email": "admin@pmarket.ph",
+      "fullName": "Master Administrator (P-Market Exec)",
+      "role": "super_admin",
+      "phone": "09171234567",
+      "status": "active",
+      "createdAt": "2026-09-01T08:00:00.000Z",
+      "salt": "f3a9e2d1",
+      "passwordHash": "346d43b3b57c85b050f86c1895c40a8d7990502964d9622162505cc20ad91d72"
+    },
+    {
+      "id": "usr_seller_001",
+      "email": "manilatech@seller.pmarket.ph",
+      "fullName": "Carlos Mendoza (Manila Tech Hub)",
+      "role": "seller",
+      "phone": "09189876543",
+      "status": "active",
+      "storeId": "store_001",
+      "createdAt": "2026-09-05T09:30:00.000Z",
+      "salt": "f3a9e2d1",
+      "passwordHash": "346d43b3b57c85b050f86c1895c40a8d7990502964d9622162505cc20ad91d72"
+    },
+    {
+      "id": "usr_seller_002",
+      "email": "cebuhandicrafts@seller.pmarket.ph",
+      "fullName": "Elena Ramos (Cebu Heritage Crafts)",
+      "role": "seller",
+      "phone": "09223456789",
+      "status": "active",
+      "storeId": "store_002",
+      "createdAt": "2026-10-10T11:00:00.000Z",
+      "salt": "f3a9e2d1",
+      "passwordHash": "346d43b3b57c85b050f86c1895c40a8d7990502964d9622162505cc20ad91d72"
+    },
+    {
+      "id": "usr_agent_001",
+      "email": "maria.referral@agent.pmarket.ph",
+      "fullName": "Maria Santos (Top Growth Partner)",
+      "role": "agent",
+      "phone": "09195551234",
+      "status": "active",
+      "referralCode": "MARIA2026",
+      "createdAt": "2026-09-12T14:15:00.000Z",
+      "salt": "f3a9e2d1",
+      "passwordHash": "346d43b3b57c85b050f86c1895c40a8d7990502964d9622162505cc20ad91d72"
+    },
+    {
+      "id": "usr_customer_001",
+      "email": "juan.delacruz@customer.ph",
+      "fullName": "Juan Dela Cruz",
+      "role": "customer",
+      "phone": "09175558888",
+      "status": "active",
+      "createdAt": "2026-09-20T16:45:00.000Z",
+      "salt": "f3a9e2d1",
+      "passwordHash": "346d43b3b57c85b050f86c1895c40a8d7990502964d9622162505cc20ad91d72"
+    }
+  ],
+  "stores": [
+    {
+      "id": "store_001",
+      "sellerId": "usr_seller_001",
+      "storeName": "Manila Tech Hub",
+      "storeSlug": "manila-tech-hub",
+      "description": "Premier supplier of authentic computer peripherals, wireless keyboards, and GaN fast chargers in Metro Manila.",
+      "businessType": "sole_proprietorship",
+      "dtiBirNumber": "DTI-NCR-2024-984210",
+      "status": "approved",
+      "contactPhone": "09189876543",
+      "locationCity": "Quezon City, Metro Manila",
+      "createdAt": "2026-09-05T09:30:00.000Z",
+      "approvedAt": "2026-09-06T10:00:00.000Z"
+    },
+    {
+      "id": "store_002",
+      "sellerId": "usr_seller_002",
+      "storeName": "Cebu Heritage Crafts",
+      "storeSlug": "cebu-heritage-crafts",
+      "description": "Authentic Visayan handwoven accessories, banig bags, and natural pearl jewelry from Cebu artisan communities.",
+      "businessType": "individual",
+      "dtiBirNumber": "DTI-R07-2025-112344",
+      "status": "pending_approval",
+      "contactPhone": "09223456789",
+      "locationCity": "Cebu City, Cebu",
+      "createdAt": "2026-10-10T11:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_plat_001",
+      "title": "Cordillera Mountain Single-Origin Arabica Coffee (500g Whole Beans)",
+      "slug": "cordillera-arabica-coffee-500g",
+      "description": "Direct trade from Sagada & Benguet smallholder farmers. Medium roast with rich tasting notes of dark chocolate, brown sugar, and dried berries. Nitrogen-flushed packaging for peak freshness.",
+      "price": 680,
+      "originalPrice": 850,
+      "stock": 143,
+      "sku": "PMKT-FLAG-COF-01",
+      "category": "Philippine Artisanal & Food",
+      "images": [
+        "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&auto=format&fit=crop&q=80"
+      ],
+      "isPlatformOwned": true,
+      "status": "approved",
+      "tags": [
+        "Benguet",
+        "Coffee",
+        "Direct Trade",
+        "Official Flagship"
+      ],
+      "weightKg": 0.55,
+      "createdAt": "2026-09-02T10:00:00.000Z",
+      "updatedAt": "2026-10-17T16:02:11.104Z"
+    },
+    {
+      "id": "prod_plat_002",
+      "title": "P-MARKET Pro ANC Wireless Earbuds (Philippine Special Edition)",
+      "slug": "pmarket-pro-anc-wireless-earbuds",
+      "description": "Active Noise Cancellation up to 38dB, Bluetooth 5.3, IPX5 sweat-proof for tropical climates, and 32 hours total playback with USB-C quick charge. Comes with 1-year Philippine replacement warranty.",
+      "price": 1899,
+      "originalPrice": 2499,
+      "stock": 82,
+      "sku": "PMKT-FLAG-AUD-02",
+      "category": "Electronics & Gadgets",
+      "images": [
+        "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=800&auto=format&fit=crop&q=80"
+      ],
+      "isPlatformOwned": true,
+      "status": "approved",
+      "tags": [
+        "Audio",
+        "Earbuds",
+        "ANC",
+        "Official Flagship"
+      ],
+      "weightKg": 0.25,
+      "createdAt": "2026-09-03T11:00:00.000Z",
+      "updatedAt": "2026-09-03T11:00:00.000Z"
+    },
+    {
+      "id": "prod_plat_003",
+      "title": "Ilocos Handwoven Inabel Heavy Cotton Throw Blanket (60x80 inches)",
+      "slug": "ilocos-handwoven-inabel-blanket",
+      "description": "Masterfully woven by traditional weavers in Santiago, Ilocos Sur using 100% natural breathable cotton. Reversible traditional geometric binakol motif.",
+      "price": 1450,
+      "originalPrice": 1750,
+      "stock": 38,
+      "sku": "PMKT-FLAG-TXT-03",
+      "category": "Home & Living",
+      "images": [
+        "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&auto=format&fit=crop&q=80"
+      ],
+      "isPlatformOwned": true,
+      "status": "approved",
+      "tags": [
+        "Inabel",
+        "Ilocos",
+        "Handwoven",
+        "Official Flagship"
+      ],
+      "weightKg": 1.1,
+      "createdAt": "2026-09-04T14:00:00.000Z",
+      "updatedAt": "2026-09-04T14:00:00.000Z"
+    },
+    {
+      "id": "prod_sel_001",
+      "title": "MechKeeb PH Tri-Mode Wireless Mechanical Keyboard (Hot-swappable)",
+      "slug": "mechkeeb-ph-tri-mode-wireless-mechanical-keyboard",
+      "description": "Compact 75% layout, pre-lubed linear switches, sound-dampening silicone foam, RGB backlight, 4000mAh battery. Supports Bluetooth 5.0, 2.4G dongle, and Type-C wired mode.",
+      "price": 2799,
+      "originalPrice": 3200,
+      "stock": 45,
+      "sku": "MTH-KB-75PRO",
+      "category": "Electronics & Gadgets",
+      "images": [
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=800&auto=format&fit=crop&q=80"
+      ],
+      "isPlatformOwned": false,
+      "sellerId": "usr_seller_001",
+      "sellerStoreName": "Manila Tech Hub",
+      "status": "approved",
+      "tags": [
+        "Keyboard",
+        "Gaming",
+        "Wireless",
+        "Manila Tech"
+      ],
+      "weightKg": 0.95,
+      "createdAt": "2026-09-07T12:00:00.000Z",
+      "updatedAt": "2026-09-07T12:00:00.000Z"
+    },
+    {
+      "id": "prod_sel_002",
+      "title": "GaN 65W Ultra-Slim Dual USB-C Fast Charger (Philippine Standard Plug)",
+      "slug": "gan-65w-ultra-slim-dual-usb-c-fast-charger",
+      "description": "Gallium Nitride technology with foldable PH flat pins. Fast charges MacBook Air, iPhone 16/15, Samsung Galaxy, and iPads simultaneously with intelligent power delivery.",
+      "price": 890,
+      "originalPrice": 1150,
+      "stock": 90,
+      "sku": "MTH-CHG-65W",
+      "category": "Electronics & Gadgets",
+      "images": [
+        "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=800&auto=format&fit=crop&q=80"
+      ],
+      "isPlatformOwned": false,
+      "sellerId": "usr_seller_001",
+      "sellerStoreName": "Manila Tech Hub",
+      "status": "approved",
+      "tags": [
+        "Charger",
+        "GaN",
+        "USB-C"
+      ],
+      "weightKg": 0.18,
+      "createdAt": "2026-09-08T15:30:00.000Z",
+      "updatedAt": "2026-09-08T15:30:00.000Z"
+    },
+    {
+      "id": "prod_sel_003",
+      "title": "Handmade Cebu Banig Eco-Travel Tote with Genuine Leather Handles",
+      "slug": "cebu-banig-eco-travel-tote",
+      "description": "Eco-friendly tikog grass woven bag handcrafted in Badian, Cebu. Features reinforced inner lining, zipper closure, and sturdy genuine leather straps.",
+      "price": 1150,
+      "originalPrice": 1390,
+      "stock": 25,
+      "sku": "CEB-BAG-001",
+      "category": "Fashion & Apparel",
+      "images": [
+        "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&auto=format&fit=crop&q=80"
+      ],
+      "isPlatformOwned": false,
+      "sellerId": "usr_seller_002",
+      "sellerStoreName": "Cebu Heritage Crafts",
+      "status": "pending_approval",
+      "tags": [
+        "Banig",
+        "Cebu",
+        "Handmade",
+        "Tote"
+      ],
+      "weightKg": 0.6,
+      "createdAt": "2026-10-11T09:00:00.000Z",
+      "updatedAt": "2026-10-11T09:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1792252931105_8695b5",
+      "orderNumber": "PMKT-20261017-8234",
+      "customerId": "usr_guest_1792252931104",
+      "customerName": "Maria Clara",
+      "customerEmail": "guest@pmarket.ph",
+      "customerPhone": "09171239999",
+      "items": [
+        {
+          "id": "item_0db11613-a971-4a7a-b617-546b9e363be8",
+          "productId": "prod_plat_001",
+          "title": "Cordillera Mountain Single-Origin Arabica Coffee (500g Whole Beans)",
+          "price": 680,
+          "quantity": 2,
+          "subtotal": 1360,
+          "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&auto=format&fit=crop&q=80",
+          "isPlatformOwned": true,
+          "fulfillmentStatus": "pending"
+        }
+      ],
+      "subtotal": 1360,
+      "shippingFee": 120,
+      "discountAmount": 0,
+      "totalAmount": 1480,
+      "status": "paid",
+      "shippingAddress": {
+        "fullName": "Maria Clara",
+        "phoneNumber": "09171239999",
+        "region": "National Capital Region (NCR)",
+        "city": "Manila",
+        "barangay": "Intramuros",
+        "streetAddress": "Calle Real 101",
+        "postalCode": "1002"
+      },
+      "paymentMethod": "gcash",
+      "paymentStatus": "paid",
+      "referralCode": "MARIA2026",
+      "referredByAgentId": "usr_agent_001",
+      "createdAt": "2026-10-17T16:02:11.105Z",
+      "updatedAt": "2026-10-17T16:02:11.113Z",
+      "paymentReference": "GCASH-SBX-931113-C6E1"
+    },
+    {
+      "id": "ord_demo_001",
+      "orderNumber": "PMKT-20261015-8812",
+      "customerId": "usr_customer_001",
+      "customerName": "Juan Dela Cruz",
+      "customerEmail": "juan.delacruz@customer.ph",
+      "customerPhone": "09175558888",
+      "items": [
+        {
+          "id": "item_001",
+          "productId": "prod_plat_001",
+          "title": "Cordillera Mountain Single-Origin Arabica Coffee (500g Whole Beans)",
+          "price": 680,
+          "quantity": 2,
+          "subtotal": 1360,
+          "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&auto=format&fit=crop&q=80",
+          "isPlatformOwned": true,
+          "fulfillmentStatus": "delivered",
+          "courierName": "J&T Express",
+          "trackingNumber": "JT9821884712PH"
+        },
+        {
+          "id": "item_002",
+          "productId": "prod_sel_002",
+          "title": "GaN 65W Ultra-Slim Dual USB-C Fast Charger (Philippine Standard Plug)",
+          "price": 890,
+          "quantity": 1,
+          "subtotal": 890,
+          "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=800&auto=format&fit=crop&q=80",
+          "isPlatformOwned": false,
+          "sellerId": "usr_seller_001",
+          "sellerStoreName": "Manila Tech Hub",
+          "fulfillmentStatus": "delivered",
+          "courierName": "Lalamove",
+          "trackingNumber": "LLM-2026-90412"
+        }
+      ],
+      "subtotal": 2250,
+      "shippingFee": 120,
+      "discountAmount": 0,
+      "totalAmount": 2370,
+      "status": "delivered",
+      "shippingAddress": {
+        "fullName": "Juan Dela Cruz",
+        "phoneNumber": "09175558888",
+        "region": "National Capital Region (NCR)",
+        "province": "Metro Manila",
+        "city": "Quezon City",
+        "barangay": "Barangay Central",
+        "streetAddress": "Unit 4B, Pinecrest Residences, Aurora Blvd",
+        "postalCode": "1100",
+        "deliveryNotes": "Please ring bell upon arrival."
+      },
+      "paymentMethod": "gcash",
+      "paymentStatus": "paid",
+      "paymentReference": "GCASH-REF-20261015-4421",
+      "referralCode": "MARIA2026",
+      "referredByAgentId": "usr_agent_001",
+      "createdAt": "2026-10-15T08:30:00.000Z",
+      "updatedAt": "2026-10-16T14:20:00.000Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_d85bab2d-7858-48b5-90c2-e4d3bdcaeae5",
+      "orderId": "ord_1792252931105_8695b5",
+      "amount": 1480,
+      "currency": "PHP",
+      "method": "gcash",
+      "status": "paid",
+      "provider": "sandbox_paymongo",
+      "referenceNumber": "GCASH-SBX-931113-C6E1",
+      "idempotencyKey": "idemp_ord_1792252931105_8695b5_pay_d85bab2d-7858-48b5-90c2-e4d3bdcaeae5",
+      "createdAt": "2026-10-17T16:02:11.106Z",
+      "paidAt": "2026-10-17T16:02:11.114Z",
+      "rawResponse": {
+        "channel": "gcash",
+        "mobileMasked": "0917***9999",
+        "simulatedAt": "2026-10-17T16:02:11.113Z",
+        "sandbox": true
+      }
+    },
+    {
+      "id": "pay_001",
+      "orderId": "ord_demo_001",
+      "amount": 2370,
+      "currency": "PHP",
+      "method": "gcash",
+      "status": "paid",
+      "provider": "sandbox_paymongo",
+      "referenceNumber": "GCASH-REF-20261015-4421",
+      "idempotencyKey": "idemp_demo_20261015_001",
+      "paidAt": "2026-10-15T08:30:00.000Z",
+      "feeAmount": 0,
+      "createdAt": "2026-10-15T08:29:00.000Z"
+    }
+  ],
+  "commissions": [
+    {
+      "id": "com_9cb8a3b1-f7c9-4e6b-a10f-80aed284b359",
+      "orderId": "ord_1792252931105_8695b5",
+      "orderNumber": "PMKT-20261017-8234",
+      "entryType": "agent_commission",
+      "recipientId": "usr_agent_001",
+      "recipientName": "Maria Santos (Top Growth Partner)",
+      "recipientRole": "agent",
+      "grossOrderAmount": 1360,
+      "commissionRatePct": 3,
+      "calculatedAmount": 40.8,
+      "status": "pending",
+      "notes": "Agent 3% referral fee for platform product \"Cordillera Mountain Single-Origin Arabica Coffee (500g Whole Beans)\"",
+      "createdAt": "2026-10-17T16:02:11.114Z",
+      "updatedAt": "2026-10-17T16:02:11.114Z"
+    },
+    {
+      "id": "com_001",
+      "orderId": "ord_demo_001",
+      "orderNumber": "PMKT-20261015-8812",
+      "entryType": "agent_commission",
+      "recipientId": "usr_agent_001",
+      "recipientName": "Maria Santos (MARIA2026)",
+      "recipientRole": "agent",
+      "grossOrderAmount": 1360,
+      "commissionRatePct": 3,
+      "calculatedAmount": 40.8,
+      "status": "approved",
+      "notes": "Agent 3% referral commission on platform-owned item (Cordillera Coffee)",
+      "createdAt": "2026-10-15T08:30:00.000Z",
+      "updatedAt": "2026-10-16T14:20:00.000Z"
+    },
+    {
+      "id": "com_002",
+      "orderId": "ord_demo_001",
+      "orderNumber": "PMKT-20261015-8812",
+      "entryType": "marketplace_fee",
+      "recipientName": "P-MARKET PH Platform",
+      "recipientRole": "platform",
+      "grossOrderAmount": 890,
+      "commissionRatePct": 5,
+      "calculatedAmount": 44.5,
+      "status": "approved",
+      "notes": "5% marketplace take rate on Manila Tech Hub sale",
+      "createdAt": "2026-10-15T08:30:00.000Z",
+      "updatedAt": "2026-10-16T14:20:00.000Z"
+    },
+    {
+      "id": "com_003",
+      "orderId": "ord_demo_001",
+      "orderNumber": "PMKT-20261015-8812",
+      "entryType": "agent_commission",
+      "recipientId": "usr_agent_001",
+      "recipientName": "Maria Santos (MARIA2026)",
+      "recipientRole": "agent",
+      "grossOrderAmount": 890,
+      "commissionRatePct": 3,
+      "calculatedAmount": 26.7,
+      "status": "approved",
+      "notes": "Agent 3% referral commission on seller item (GaN Charger)",
+      "createdAt": "2026-10-15T08:30:00.000Z",
+      "updatedAt": "2026-10-16T14:20:00.000Z"
+    },
+    {
+      "id": "com_004",
+      "orderId": "ord_demo_001",
+      "orderNumber": "PMKT-20261015-8812",
+      "entryType": "seller_net",
+      "recipientId": "usr_seller_001",
+      "recipientName": "Manila Tech Hub",
+      "recipientRole": "seller",
+      "grossOrderAmount": 890,
+      "commissionRatePct": 95,
+      "calculatedAmount": 845.5,
+      "status": "approved",
+      "notes": "Seller net payout accrual after 5% platform fee deduction",
+      "createdAt": "2026-10-15T08:30:00.000Z",
+      "updatedAt": "2026-10-16T14:20:00.000Z"
+    }
+  ],
+  "payouts": [],
+  "auditLogs": [
+    {
+      "id": "log_1792252986904_4442b7",
+      "action": "USER_LOGIN",
+      "performedByUserId": "usr_admin_001",
+      "performedByRole": "super_admin",
+      "targetType": "auth",
+      "targetId": "usr_admin_001",
+      "details": "User admin@pmarket.ph logged in successfully.",
+      "createdAt": "2026-10-17T16:03:06.904Z"
+    },
+    {
+      "id": "log_1792252931115_460da6",
+      "action": "ORDER_PAID",
+      "performedByUserId": "usr_guest_1792252931104",
+      "performedByRole": "customer",
+      "targetType": "order",
+      "targetId": "ord_1792252931105_8695b5",
+      "details": "Order PMKT-20261017-8234 successfully paid ₱1480.00 via sandbox_paymongo. Ref: GCASH-SBX-931113-C6E1.",
+      "metadata": {
+        "referenceNumber": "GCASH-SBX-931113-C6E1",
+        "provider": "sandbox_paymongo",
+        "eventId": "evt_sbx_71da816f-f1f9-4a7a-935c-b7537b88056f"
+      },
+      "createdAt": "2026-10-17T16:02:11.115Z"
+    },
+    {
+      "id": "log_1792252931106_07509b",
+      "action": "ORDER_CREATED",
+      "performedByUserId": "usr_guest_1792252931104",
+      "performedByRole": "customer",
+      "targetType": "order",
+      "targetId": "ord_1792252931105_8695b5",
+      "details": "Order PMKT-20261017-8234 created for ₱1480.00. Attributed agent: MARIA2026.",
+      "createdAt": "2026-10-17T16:02:11.106Z"
+    },
+    {
+      "id": "log_001",
+      "action": "SYSTEM_INITIALIZATION",
+      "performedByUserId": "usr_admin_001",
+      "performedByRole": "super_admin",
+      "targetType": "settings",
+      "targetId": "global_settings",
+      "details": "P-MARKET PH initial database seeded with core Philippine flagship products and commission rules.",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "log_002",
+      "action": "SELLER_APPROVED",
+      "performedByUserId": "usr_admin_001",
+      "performedByRole": "super_admin",
+      "targetType": "seller",
+      "targetId": "store_001",
+      "details": "Manila Tech Hub (DTI-NCR-2024-984210) verified and authorized for marketplace sales.",
+      "createdAt": "2026-09-06T10:00:00.000Z"
+    },
+    {
+      "id": "log_003",
+      "action": "PAYMENT_VERIFIED",
+      "performedByUserId": "usr_customer_001",
+      "performedByRole": "customer",
+      "targetType": "order",
+      "targetId": "ord_demo_001",
+      "details": "Order PMKT-20261015-8812 paid ₱2,370.00 via GCash sandbox gateway. Reference: GCASH-REF-20261015-4421.",
+      "createdAt": "2026-10-15T08:30:00.000Z"
+    }
+  ],
+  "settings": {
+    "platformCommissionPct": 5,
+    "agentCommissionPct": 3,
+    "minPayoutAmount": 500,
+    "sandboxMode": true,
+    "autoApproveDays": 3,
+    "gatewayName": "PayMongo & Maya Unified Gateway",
+    "webhookSecretConfigured": true,
+    "liveSecretConfigured": false
+  }
+}
